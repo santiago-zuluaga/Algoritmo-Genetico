@@ -21,6 +21,10 @@ python -m sugeno.main --petalwidth 1.6 --petallength 5.0
 
 El primer comando informa el mejor individuo y escribe `resultados/estrella.png`. Cada corrida empieza con una población aleatoria; la solución de referencia del parcial aparece únicamente en pruebas: `[1, 5, 6, 12, 3, 10, 11, 9, 7, 8, 2, 4]`.
 
+## Laboratorio interactivo en Google Colab
+
+Abre el [laboratorio de la estrella mágica en Google Colab](https://colab.research.google.com/github/santiago-zuluaga/Algoritmo-Genetico/blob/main/notebooks/algoritmo_genetico.ipynb). El cuaderno clona este repositorio, presenta los conceptos y operadores en el orden de una clase práctica, permite cambiar parámetros con controles interactivos, inspeccionar generaciones paso a paso y comparar corridas reproducibles. También incluye una animación acotada y gráficas de fitness y diversidad.
+
 ## Algoritmo genético
 
 Cada cromosoma es una permutación de 1..12. Se minimiza la suma de desviaciones absolutas de las seis líneas respecto de 26. La selección es por torneo; el cruce OX conserva permutaciones; la mutación intercambia dos genes; el elitismo preserva los mejores. Los parámetros y semilla se configuran por argumentos de terminal. El método es estocástico y no promete convergencia en un número fijo de generaciones.
